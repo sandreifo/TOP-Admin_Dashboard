@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/69f2048b6f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <nav>
+        <div id="navTitle">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>view-dashboard</title><path d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z" /></svg>
+            <h2>Dashboard</h2>
+        </div>
+        <div id="links container">
+            <ul id="navLinksOne">
+                <li class="navLinks"><i class="fa-solid fa-house"></i><p>Home</p></li>
+                <li class="navLinks"><i class="fa-solid fa-user"></i><p>Profile</p></li>
+                <li class="navLinks"><i class="fa-solid fa-envelope"></i><p>Messages</p></li>
+                <li class="navLinks"><i class="fa-solid fa-clock"></i><p>History</p></li>
+                <li class="navLinks"><i class="fa-solid fa-list-check"></i><p>Tasks</p></li>
+                <li class="navLinks"><i class="fa-solid fa-users"></i><p>Communities</p></li>
+            </ul>
+            <br>
+            <ul id="navLinksTwo">
+                <li class="navLinks"><i class="fa-solid fa-gears"></i><p>Settings</p></li>
+                <li class="navLinks"><i class="fa-solid fa-headset"></i><p>Support</p></li>
+                <li class="navLinks"><i class="fa-solid fa-lock"></i><p>Privacy</p></li>
+            </ul>
+        </div> 
+    </nav>
+    <header>
+        <div id="headerTop">
+            <form action="">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text">
+            </form>
+            <div id="headerTopUserProfile">
+            <i class="fa-solid fa-bell"></i>
+            <img src="IMG_0174.jpg" alt="" id="headerTopProfile">
+            <p id="headerTopUser">Andrei Fuentes</p>
+            </div>
+        </div>   
+        <div id="headerBot">
+            <div id="headerGreeting">
+                <img src="IMG_0174.jpg" alt="" id="headerBotProfile">
+                <div id="headerBotGreeting">
+                    <p>Hi there,</p>
+                    <h2>Andrei Fuentes (@andrei)</h2>
+                </div>
+            </div>
+            <div id="headerButtons">
+                <button>New</button>
+                <button>Upload</button>
+                <button>Share</button>
+            </div>
+        </div>     
+    </header>
+    <main>
+        <article id="projects">
+            <h3>Your Projects</h3>
+            <div id="cards">
+                <div>Card 1</div>
+                <div>Card 2</div>
+                <div>Card 3</div>
+                <div>Card 4</div>
+                <div>Card 5</div>
+                <div>Card 6</div>
+            </div>
+        </article>
+        <article id="announcements">
+            <h3>Announcements</h3>
+            <div></div>
+            </article>
+        <article id="trending">
+            <h3>Trending</h3>
+            <div></div>
+        </article>
+    </main>
+</body>
+</html>

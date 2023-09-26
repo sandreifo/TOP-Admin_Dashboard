@@ -1,0 +1,155 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    grid-template: 150px auto/280px auto;
+    grid-template-areas: "nav header" "nav main";
+}
+
+nav {
+    background-color: #252126;
+    grid-area: nav;
+    color: white;
+}
+
+header {
+    grid-area: header;
+    padding: 15px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main {
+    background-color: rgb(226, 226, 226);
+    grid-area: main;
+    display: grid;
+    grid-template: 1fr 1fr/5fr 2fr;
+    grid-template-areas: "projects announcements" "projects trending";
+}
+
+svg {
+    fill: white;
+    width: 40px;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    margin: 0;
+}
+
+#navTitle {
+    display: flex;
+    padding: 5px 20px;
+}
+
+#headerTopProfile {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+}
+
+#headerBotProfile {
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+}
+    
+.navLinks {
+    display: flex;
+    padding: 10px;
+}
+
+.navLinks p {
+    font-size: 18px;
+}
+
+i {
+    width: 15px;
+    padding-right: 10px;
+}
+
+#headerTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#headerTopUserProfile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+input {
+    width: 40vw;
+    background-color: rgb(221, 221, 221);
+    border-radius: 15px;
+    border: none;
+    height: 25px;
+}
+
+#headerTopUser {
+    font-weight: bold;
+}
+
+#headerBot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#headerBotGreeting {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 15px;
+}
+
+button {
+    border: none;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.224);
+    background-color: #252126;
+    border-radius: 15px;
+    color: white;
+    padding: 8px 25px;
+    margin-left: 10px;
+}
+
+#projects {
+    grid-area: projects;
+}
+
+#headerGreeting {
+    display: flex;
+}
+
+#headerGreeting h2 {
+    margin: 0;
+}
+
+#headerGreeting p {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#announcements {
+    grid-area: announcements;
+}
+
+#trending {
+    grid-area: trending;
+}
+
+#cards {
+    display: grid;
+    grid-template: repeat(3, 1fr)/repeat(2, 1fr);
+}
